@@ -1,0 +1,13 @@
+pipeline {
+  agent any
+  tools { 
+        maven 'Maven_3_5_2'  
+    }
+   stages{
+    stage('CompileandRunSonarAnalysis') {
+            steps {	
+		sh 'mvn clean verify sonar:sonar -Dsonar.projectKey=test-organization-appp -Dsonar.organization=test-organization-app -Dsonar.host.url=https://sonarcloud.io -Dsonar.token=49b11162797ee0157b74d32f0e4fddfbbee238d9'
+			}
+        } 
+  }
+}

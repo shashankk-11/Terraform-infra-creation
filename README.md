@@ -24,6 +24,10 @@ terraform plan -var-file="vars/dev-west-2.tfvars"
 terraform apply -var-file="vars/dev-west-2.tfvars"
 ```
 
-## Step 3: Commands to get the Jenkins admin password via command line
-```
+### Added set of plugins for jenkins 
+
+Docker Pipeline<br>
+kubernates cli<br>
+aws credentials<br>
+amazon ecr
 

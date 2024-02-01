@@ -6,9 +6,6 @@ sudo wget -O /etc/yum.repos.d/jenkins.repo \
     https://pkg.jenkins.io/redhat-stable/jenkins.repo
 sudo rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io-2023.key
 sudo yum upgrade
-#sudo yum install jenkins java-1.8.0-openjdk-devel -y
-#sudo amazon-linux-extras install java-openjdk11
-#Java 17 installed and old Java versions commented out
 sudo dnf install java-17-amazon-corretto-devel
 sudo yum install git -y
 sudo wget http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo -O /etc/yum.repos.d/epel-apache-maven.repo
